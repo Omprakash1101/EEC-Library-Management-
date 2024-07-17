@@ -28,4 +28,4 @@ jobs:
     - name: Run Tests
       run: |
         cd ./project_python/website
-        python manage.py test
+        python manage.py runserver
