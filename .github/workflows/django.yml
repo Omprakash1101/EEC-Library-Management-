@@ -26,10 +26,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         python -m venv myenv
-        myenv\Scripts\activate
+        myenv\Scripts\activate.bat
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        myenv\Scripts\activate
+        myenv\Scripts\activate.bat
         cd ./project_python/website
         python manage.py test
