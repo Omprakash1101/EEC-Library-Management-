@@ -52,6 +52,6 @@ jobs:
     - name: deploy
       run: |
         cd ./project_python/website
-        python manage.py runserver
+        python manage.py check --deploy
 
     
